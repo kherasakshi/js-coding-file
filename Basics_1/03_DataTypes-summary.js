@@ -67,6 +67,55 @@ console.log(typeof outsideTemp);
 
 
 
+// *****************************Stack and Heap Memory**********************************
+
+// Stack Memory Stores Primtive Data Types 
+// Heap Memory  Stores Non-Primitive Data Types
+
+// Stack Memory means that whenever you declare a variable 
+// You get a copy of whatever variable you have declared 
+
+
+// Whenever the memory is defined inside a Heap Memory  
+// then it is copied from there you that is reference 
+
+let firstName = "PersonA"
+let anotherName = firstName
+anotherName = "Sakkhera"
+
+console.log(anotherName);
+console.log(firstName);
+
+
+// --------------Heap Memory------------------------
+let userOne = {
+    email : "sak123@gmail.com",
+    upi : "sak@ybl"
+}
+
+let  userTwo = userOne
+userTwo.email = "sak456@gmail.com"
+console.log(userOne.email)
+console.log(userTwo.email)
+
+// it means the Output we get email of Reference
+//  "sak456@gmail.com"
+
+
+// let userTwo = {
+//    email : "khera@123gmail.com",
+//     upi:     "sakkhera@ybl" 
+// }
+
+
+
+
+
+
+
+
+
+
 
 
 
