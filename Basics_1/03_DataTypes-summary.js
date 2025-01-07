@@ -6,14 +6,14 @@
 
 // # Primitive DatatType:-  
 // categorized into 7  types :- 
-// Primtive Type are call by value , which means taht whenever you 
+// Primtive Type are call by value , which means that whenever you 
 // copy them from one place to another their original data remains Same 
 // The reference is not given to you . 
 
 
 const score = 100
 const scoreVal = 100.3
-// / the aboive code is Number whether is in decimal dosn't matter
+// / the above code is Number whether is in decimal dosn't matter
 const isLoggedIn = false
 // the aboive code is Boolean
 const outsideTemp = null
@@ -83,9 +83,9 @@ let firstName = "PersonA"
 let anotherName = firstName
 anotherName = "Sakkhera"
 
-console.log(anotherName);
-console.log(firstName);
 
+console.log(firstName);
+console.log(anotherName);
 
 // --------------Heap Memory------------------------
 let userOne = {
@@ -109,7 +109,7 @@ console.log(userTwo.email)
 
 
 
-
+// node Basics_1/03_DataTypes-summary.js
 
 
 

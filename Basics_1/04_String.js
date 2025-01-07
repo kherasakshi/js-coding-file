@@ -130,7 +130,7 @@ console.log(Math.round(4.6))
 // and output 4 
 
 console.log(Math.ceil(4.2))
-// ceil means the value after decimal is above whether 1 or 2 it gives the top value
+// ceil means the value after decimal is above whether 1 or 2 it gives the top value 5
 // to us or if i write 4 then it gives 4
 
 
@@ -166,6 +166,95 @@ const max = 20
 
 // i want the value between these two values
 console.log(Math.floor(Math.random() * (max-min + 1)) + min);
+ 
+
+// ************************Dates and Time *************************************************
+
+
+// JavaScript Date Objects represents a single moment in time in a platform 
+// independent form . the moment represents  milliseconds since the midnight at the
+// beginning of January 1 1970, UTC 
+
+
+let myDate = new Date()
+
+console.log( "Type of Date is " + typeof myDate );
+
+console.log(myDate);
+console.log("Above code simple new Date()")
+// that gives you a time but  can't understand the numbers in which they define 
+// the timings
+console.log(myDate.toString());
+console.log("Above code toString() ")
+// now it's little much easy to understand than before 
+console.log(myDate.toDateString());
+console.log("Above code toDateString() ")
+
+console.log(myDate.toLocaleString);
+console.log("Above code toLocaleString() ")
+
+console.log(myDate.toLocaleDateString());
+console.log("Above code toLocaleDateString()")
+
+
+console.log(myDate.toLocaleTimeString());
+console.log("Above code toLocaleTimeString() ")
+
+
+console.log(myDate.toJSON());
+console.log("Above code toJson() ")
+
+
+
+let myCreatedDate = new Date(2025 , 0 , 7)
+console.log(myCreatedDate.toDateString())
+// months in date counts from 0 - 11
+// MM/DD/YY
+
+
+let myTimeStamp = Date.now()
+console.log(myTimeStamp);
+// the above Date.now gives the timing from 1st jan 1970 standards
+console.log(myCreatedDate.getTime());
+// now   i had change the date of above code i use getTime() method as it gives me the timing 
+// in  milliseconds
+
+// as it easy to compare the dates between the  dates 
+
+// Now anither Method to that how to convert the time of milliseconds into seconds
+ 
+console.log(Date.now()/ 1000);
+
+// Output given in decimal number that's a
+//  problem for us that's why we are using Math.floor();
+console.log("Using Math.Floor in Dates" + Date.now()/1000)
+// and now we can easily compare 
+
+
+
+const newDated = new Date()
+console.log(newDated)
+console.log(newDated.getFullYear())
+console.log(newDated.getMonth() + 1)
+console.log(newDated.getDay())
+console.log(newDated.getMinutes())
+console.log(newDated.getSeconds())
+console.log(newDated.getMilliseconds())
+
+
+// now last we are using more in Dates is 
+// newDated.toLocaleString('default' , {
+//     weekday : "long",
+   
+// })
+
+
+
+
+
+
+
+
 
 
 

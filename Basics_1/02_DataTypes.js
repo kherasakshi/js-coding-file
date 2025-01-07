@@ -25,7 +25,7 @@ console.log(valueInNumber);
 // if the value of rollNo is String then it gives the output- Nan
 
 // Now we can also convert the value of 1 into a Boolen value 
-// let isLoggedIn = 1
+let isLoggedIn = 1
 let booleanIsLoggedIn = Boolean(isLoggedIn);
 console.log(booleanIsLoggedIn);
 // if the value of isLoggedIn is String then it gives the output- true 
@@ -75,7 +75,7 @@ console.log(true);
 console.log(+true); 
 // Output 1 as the boolean itself added the increament 
   // value itself 
-console.log(true); 
+// console.log(true+); 
 // Output error
 console.log(+"");
 //  Output 1
