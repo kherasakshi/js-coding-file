@@ -1,5 +1,5 @@
 console.log("Sak-khera")
-/ variable and constants
+// / variable and constants
 // variable are like an empty container or we can say like an memory space and constants are like an
 // value that you can't change the value assigned to that variable
 
