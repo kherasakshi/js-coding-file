@@ -18,7 +18,7 @@
 const myUser = {
     name : "Sakshi",
     age : 18,
-    // [mySym]: "myValueSymbol",
+    [mySym]: "@",
     Invalid : false,
     location: "Jaipur",
     email : "sak@122gmail.com",
@@ -36,7 +36,7 @@ console.log(myUser["email"]);
 // console.log(myUser[mySym]);
 
 
-// const mySym = Symbol("myValueSymbol")
+const mySym = Symbol("myValueSymbol")
 //  and if you want to add the Symbol in Object 
 //  you can add like this [mySymbol] = "myValueSymbol"
 // and you can access like this MyUser[mySymbol]
