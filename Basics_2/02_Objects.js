@@ -98,7 +98,7 @@ console.log(obj5);
 
 // Array Of objects
 
-const myUserobj = [
+let myUserprofile = [
     {
         name : 'alice',
         rollNo : 1,
@@ -109,27 +109,29 @@ const myUserobj = [
         rollNo : 2,
         email: "Bob12@gmail.com"
     },
+
       {
         name : 'Charlie',
         rollNo : 3,
         email: "charlie12@gmail.com"
     },
-      {
+     {
         name : 'Kristine',
-        rollNo : 1,
+        rollNo : 4,
         email: "kristine12@gmail.com"
-    }
+    },
 ]
 
 // so if i want to acces the object keys and values from an array
-myUserobj[1].email
-console.log(Object.keys(myUserobj))
+console.log("MyuserObj" +  " " + myUserprofile[1].email);
+
+console.log("myUserObj Keys" + " " + Object.keys(myUserprofile));
 // Object.keys gives you an key in a  array
-console.log(Object.values(myUserobj))
+console.log(Object.values(myUserprofile));
 // Object.keys gives you an values in a  array
 
-console.log(Object.entries(myUserobj))
-// Object.keys gives you an key-value in a  nested-array
+console.log(Object.entries(myUserprofile));
+// Object.entries gives you an key-value in a  nested-array
 
-console.log(myUserobj.hasOwnProperty('email'));
+console.log(myUserprofile.hasOwnProperty('name'));
 // Object.keys gives you an key in a  array
