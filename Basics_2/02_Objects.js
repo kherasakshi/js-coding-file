@@ -130,8 +130,9 @@ console.log("myUserObj Keys" + " " + Object.keys(myUserprofile));
 console.log(Object.values(myUserprofile));
 // Object.keys gives you an values in a  array
 
-console.log(Object.entries(myUserprofile));
+console.log("Keys and Values using Entries Method" , Object.entries(myUserprofile));
 // Object.entries gives you an key-value in a  nested-array
 
 console.log(myUserprofile.hasOwnProperty('name'));
+// false
 // Object.keys gives you an key in a  array

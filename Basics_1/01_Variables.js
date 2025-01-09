@@ -15,7 +15,7 @@ console.log(firstId);
  classRollNo = 30;
 console.log(classRollNo);
 
-// using var we can re-declare and re - assign the value both but now we can't use var keyword as it might bought bug in our code 
+// using var we can re-declare and re - assign the value both but now we can't use var keyword as it might bring  bug in our code 
 var cityId = 18000;
 console.log(cityId);
 

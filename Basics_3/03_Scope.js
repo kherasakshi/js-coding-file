@@ -71,6 +71,7 @@ if(true){
     console.log("Block Scope Let" , z)
     // Output 1000
 }
+
 console.log("Outside Block Let " , z)
 // Output 2000
 
@@ -101,3 +102,75 @@ functionHold()
 
 // ----------------------Arrow Functions------------------------------------------------
 
+// It's a new updation in ECMA6 
+// this refer to current context 
+const userFirst = {
+  username : "Sakshi",
+  price : 999,
+  greetingMessage : function() {
+  console.log(`Hello How r u ? ${this.username}`)
+  console.log(this)
+  }
+  
+  
+}
+
+// userFirst.greetingMessage()
+// userFirst.username = "KheraSak"
+// userFirst.greetingMessage()
+console.log(this);
+// the above this keyword  refer to the empty content as in global 
+// there is no content in that and gives the output empty {}
+// in browser console the this keyword is an window object 
+// and in another engines like node js standalone application this keyword show empty {}
+
+
+
+
+
+
+
+function One(){
+  let usernameOne = "sak"
+  console.log(this.usernameOne)
+}
+One()
+// then the username is undefined inside of function we can't use the this keyword 
+// we can use only in object inside that we can call the function and use this keyword
+// when we execute (this) inside of function then it gives a Global ......all other 
+// information to us 
+
+
+const firstfunc = function(){
+  let usernameOne = "sak"
+  console.log(this.usernameOne)
+}
+firstfunc()
+
+// then the username is undefined inside of function we can't use the this keyword 
+// we can use only in object inside that we can call the function and use this keyword
+// when we execute (this) inside of function then it gives a Global ......all other 
+// information to us 
+
+const secondFunc = () =>{
+  let usernameOne = "sak"
+  console.log(this.usernameOne)
+  // console.log(this)
+  // showing {} empty
+}
+
+secondFunc()
+
+
+// Explicit return means you have to use return keyword and paranethese 
+const addTwo= (num1 , num2) =>{
+return num1 + num2
+}
+
+console.log(addTwo(100 , 100));
+// Output 200
+
+
+const addTow = (num1 , num2) => ({username : "sakshi"});
+// in this way i can declare the object
+console.log(addTwo(3 , 4))

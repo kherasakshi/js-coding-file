@@ -16,6 +16,7 @@ console.log(typeof(rollNO));
 let valueInNumber = Number(rollNo);
 console.log(typeof valueInNumber);
 console.log(valueInNumber);
+
 // After converting the number using - Number(rollNo);
 // it means it give the result Nan
 // if the value of rollNo is null then it gives the output- 0
@@ -95,8 +96,8 @@ console.log(null == 0)
 console.log(null >= 0)
 //  Output true
 
-// the reason is that an equality check == and comparision work differntly
-// comparisons convert null to a number treating it as 0
+ // the reason is that an equality check == and comparision work differntly
+ // comparisons convert null to a number treating it as 0
   // that's why null >=0  returns true  
   console.log(undefined == 0);
   //  Output false
@@ -105,13 +106,13 @@ console.log(null >= 0)
   console.log(undefined < 0); 
   //  Output false
 
-// === strict it checks the value strictly and also check their datatypes
+ // === strict it checks the value strictly and also check their datatypes
 console.log("2" === 2) 
 // gives Output false as it checks the dataTypes 
   // of both the values 
 console.log("2" == 2)
-//  gives Output true as it only checks conversion 
-  // of the both value
+//  gives Output true as it only checks and compare 
+  // the both value 
 
 
 

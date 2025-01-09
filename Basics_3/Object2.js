@@ -63,12 +63,27 @@ let filterEven = professionObj.filter((evens)=>{
 
 console.log(filterEven)
 
+
+
+
 let newArray = [];
 filterEven.forEach(items =>{
      items.value = true
     
      newArray.push(items)
 })
+
+
+// let newObj1 = {}
+// newArray.forEach(items=>{
+//   let key = items.name
+//   newObj1[key] = items
+// })
+// console.log(newObj1)
+
+
+
+
 
 
 let newObj = {}
@@ -80,6 +95,13 @@ newArray.forEach(values=>{
 })
 console.log(newObj);
 
+
+
+
+
+
+
+
 let mapping = newArray.map((values)=>{
     values.required = false
     console.log(values);
@@ -87,3 +109,5 @@ let mapping = newArray.map((values)=>{
 
 
 // node Basics_3/Object2.js
+
+
