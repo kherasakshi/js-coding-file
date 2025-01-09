@@ -51,18 +51,23 @@ const personProfile = [
     }
     ]
 
-    let newArr = [];
-    let limitKeys = 2;
-   personProfile.forEach(x =>{  
-    let array = [];
-    if(array.length === limitKeys){
- newArr.push(array);
- array =[];
- array.push(Object.values(x));
-    }else{
-        array.push(Object.values(x))
-    }
-      })
+    
+
+    
+
+     let newArr = [];
+     let limitKeys = 2;
+    personProfile.forEach(x =>{  
+     let array = [];
+     if(array.length === limitKeys){
+     newArr.push(array);
+      array =[];
+     array.push(Object.values(x));
+     }
+     else{
+         array.push(Object.values(x))
+     }
+       })
       
 
  
