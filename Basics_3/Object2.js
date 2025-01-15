@@ -56,44 +56,44 @@ const professionObj =
 
   ]
 
+
+
+
 let filterEven = professionObj.filter((evens)=>{
    return  evens.rollNo % 2 === 0
 })
+console.log(filterEven);
 
 
-console.log(filterEven)
+let filteringProf = professionObj.filter((profession)=>{
+ return profession.prof === 'Dev'
+})
+console.log(filteringProf);
 
+let createdArr = [];
 
-
-
-let newArray = [];
-filterEven.forEach(items =>{
-     items.value = true
-    
-     newArray.push(items)
+filteringProf.map(naming =>{
+  // console.log(naming)
+  let newNaming = { ...naming, value: true };
+  createdArr.push(newNaming);
 })
 
 
-// let newObj1 = {}
-// newArray.forEach(items=>{
-//   let key = items.name
-//   newObj1[key] = items
-// })
-// console.log(newObj1)
 
 
 
-
-
-
-let newObj = {}
-newArray.forEach(values=>{
-  let key = values.rollNo
-   newObj[key] = values
+// let newObj = {}
+// newArray.forEach(values=>{
+//   let key = values.rollNo
+//    newObj[key] = values
  
-    // console.log(values)
-})
-console.log(newObj);
+//     // console.log(values)
+// })
+// console.log(newObj);
+
+
+
+// to make a prof property out of the object to identify by their profession
 
 
 
@@ -101,11 +101,6 @@ console.log(newObj);
 
 
 
-
-let mapping = newArray.map((values)=>{
-    values.required = false
-    console.log(values);
-})
 
 
 // node Basics_3/Object2.js

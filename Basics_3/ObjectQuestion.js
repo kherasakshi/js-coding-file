@@ -111,14 +111,14 @@ console.log(myArr);
 
 
 
-let myobj = {};
-function myFuncTwo(valF){
-valF.forEach(value =>{
- let key = value.name
- myobj[key] = value
- console.log(myobj)
+// let myobj = {};
+// function myFuncTwo(valF){
+// valF.forEach(value =>{
+//  let key = value.name
+//  myobj[key] = value
+//  console.log(myobj)
  
-})
-}
+// })
+// }
 
-myFuncTwo(myArr);
+// myFuncTwo(myArr);
